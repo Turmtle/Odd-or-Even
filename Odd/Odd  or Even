@@ -1,0 +1,44 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int
+main ()
+{
+    int inputNum;
+    int outputNum;
+    bool isEven;
+    bool isOdd;
+    string outputEven;
+    string outputOdd;
+    cout << "input a whole number";
+    cin >> inputNum;
+    if (inputNum % 2 == 0)
+    {
+        isEven = true;
+        isOdd = false;
+    }
+    else if (inputNum %2 == 1)
+    {
+        isEven = false;
+        isOdd = true;
+    }
+    else
+    {
+        cout << "input a whole number";
+    }
+    if (isEven == 1)
+    {
+        outputEven = "true";
+        outputOdd = "false";
+    }
+    else if (isEven == 0)
+    {
+        outputEven = "false";
+        outputOdd = "true";
+    }
+    cout << "Even:" << outputEven << "\n";
+    cout <<"Odd:" << outputOdd;
+    return 0;
+}
